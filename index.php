@@ -13,6 +13,9 @@ $container['view'] = function ($container) {
 };
 $dbh = new \PDO("mysql:host=".MYSQL_HOST.";dbname=".MYSQL_DATABASE, MYSQL_USER, MYSQL_PASSWORD);
 
+$app->get('/', function ($request, $response, $args) use ($app, $dbh) {
+	return $this->view->render($response, 'index.html');
+});
 
 $app->get('/members', function ($request, $response, $args) use ($app, $dbh) {
 
