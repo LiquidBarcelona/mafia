@@ -4,19 +4,28 @@ require 'vendor/autoload.php';
 $app = new Slim\App();
 $container = $app->getContainer();
 $container['view'] = function ($container) {
-	$view = new \Slim\Views\Twig('views', [
-		'cache' => false
-	]);
+	$view = new \Slim\Views\Twig('views', ['cache' => false]);
 	$basePath = rtrim(str_ireplace('index.php', '', $container['request']->getUri()->getBasePath()), '/');
 	$view->addExtension(new Slim\Views\TwigExtension($container['router'], $basePath));
 	return $view;
 };
 $dbh = new \PDO("mysql:host=".MYSQL_HOST.";dbname=".MYSQL_DATABASE, MYSQL_USER, MYSQL_PASSWORD);
 
+/**
+ *
+ * HOME
+ *
+ */
 $app->get('/', function ($request, $response, $args) use ($app, $dbh) {
 	return $this->view->render($response, 'index.html');
 });
 
+
+/**
+ *
+ * Codi de l'acció /members
+ *
+ */
 $app->get('/members', function ($request, $response, $args) use ($app, $dbh) {
 
 	$sql = "SELECT members.*, capo.name as capo_name
@@ -31,17 +40,35 @@ $app->get('/members', function ($request, $response, $args) use ($app, $dbh) {
 	]);
 });
 
+
+
 $app->get('/imprison/{id}', function ($request, $response, $args) use ($app, $dbh) {
+	/**
+	 *
+	 * IMPRISON CODE
+	 *
+	 */
 	$response->write('Mètode empresonar');
 });
 
 
 $app->get('/compare', function ($request, $response, $args) use ($app, $dbh) {
+	/**
+	 *
+	 * COMPARE CODE
+	 *
+	 */
 	return $this->view->render($response, 'compare.html');
 });
 
 $app->post('/compare', function ($request, $response, $args) use ($app, $dbh) {
+	/**
+	 *
+	 * COMPARE CODE (FORM POST)
+	 *
+	 */
 	$response->write('Algoritme de comparar');
 });
+
 
 $app->run();
