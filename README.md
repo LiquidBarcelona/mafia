@@ -22,14 +22,14 @@ copiar-lo a la taula "mafia_jail" amb els anys de condemna assignats
   - Re-assignar els seus sobordinats
 
 2) Fer un procés que donats dos ids de membres de la màfia ens digui
-quin está més amunt a l'organització
+quin està més amunt a l'organització
 
 
 ## NOTES: ##
 
 - El projecte està configurat per respondre a la url http://localhost/mafia
-Si es desitja canviar d'ubicació, s'haurán de modificar els links de les vistes.
-El projecte está pensat per funcionar amb apache i ha de tenir activada la extensió mod_rewrite
+Si es desitja canviar d'ubicació, s'hauràn de modificar els links de les vistes.
+El projecte està pensat per funcionar amb apache i ha de tenir activada la extensió mod_rewrite
 
 - El dump de la base de dades MySQL és a utils/dump.sql
 
