@@ -20,3 +20,21 @@ copiar-lo a la taula "mafia_jail" amb els anys de condemna assignats
 
 2) Fer un procés que donats dos ids de membres de la màfia ens digui
 quin está més amunt a l'organització
+
+
+**NOTES:
+
+- El projecte està configurat per respondre a la url http://localhost/mafia
+Si es desitja canviar d'ubicació, s'haurán de modificar els links de les vistes.
+El projecte está pensat per funcionar amb apache i ha de tenir activada la extensió mod_rewrite
+
+- El dump de la base de dades MySQL és a utils/dump.sql
+
+- A config/config.php s'han de setejar les credencials de la base de dades.
+
+- S'ha utilitzat el gestor de dependències composer (https://getcomposer.org/), per tant
+ un cop descarregat el codi s'haurà d'inicialitzar el projecte fent un composer update
+ 
+- El framework PHP utilitzat és Slim. Un micro framework senzill i lleuger.
+ 
+- Tot el codi és a index.php, i les vistes son a views 
