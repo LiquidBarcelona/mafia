@@ -24,7 +24,7 @@ copiar-lo a la taula "mafia_jail" amb els anys de condemna assignats
 quin está més amunt a l'organització
 
 
-# NOTES:#
+## NOTES: ##
 
 - El projecte està configurat per respondre a la url http://localhost/mafia
 Si es desitja canviar d'ubicació, s'haurán de modificar els links de les vistes.
