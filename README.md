@@ -13,6 +13,7 @@ i que està al mateix nivell que a l'anterior membre.
 
 1) Fer el procés "empresonar" desde la taula de membres. Aquest
 mètode, haurà de:
+
 - Demanar confirmació via javascript: "Segur que desitja iniciar el
 procés d'enpresonament?"
 - Demanar a l'usuari els anys de condemna del membre de la mafia
@@ -40,3 +41,5 @@ El projecte está pensat per funcionar amb apache i ha de tenir activada la exte
 - El framework PHP utilitzat és Slim. Un micro framework senzill i lleuger.
  
 - Tot el codi és a index.php, i les vistes son a views 
+
+- Si es modifica l'estructura a la base de dades, enviar el dump de l'estructura definitiva
