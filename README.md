@@ -1,3 +1,5 @@
+# Web Code Test #
+
 L'FBI porta capturant membres de la mafia siciliana desde 1985. Basat
 en prèvies investigacions sabem con funciona la mafia quan succeix un
 d'aquests esdeveniments.
@@ -7,7 +9,7 @@ l'organització i tots els seus subordinats son inmediatament reubicats
 i passen a treballar per al capo que porta més temps a l'organització
 i que està al mateix nivell que a l'anterior membre.
 
-Es demana:
+## Es demana: ##
 
 1) Fer el procés "empresonar" desde la taula de membres. Aquest
 mètode, haurà de:
@@ -22,7 +24,7 @@ copiar-lo a la taula "mafia_jail" amb els anys de condemna assignats
 quin está més amunt a l'organització
 
 
-**NOTES:
+# NOTES:#
 
 - El projecte està configurat per respondre a la url http://localhost/mafia
 Si es desitja canviar d'ubicació, s'haurán de modificar els links de les vistes.
